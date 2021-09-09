@@ -1,0 +1,4 @@
+DELETE http://localhost:3003/api/movements/61394e451a9133689adbac89
+Content-Type: application/json
+
+
