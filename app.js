@@ -8,7 +8,7 @@ const logger = require('./utils/logger');
 
 const movRouter = require('./controllers/movements');
 
-logger.info('connecting to port', config.PORT);
+logger.info('connecting to port', process.env.PORT);
 
 const mongoUrl = config.MONGODB_URI;
 mongoose.connect(mongoUrl);
