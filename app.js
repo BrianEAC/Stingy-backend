@@ -13,6 +13,7 @@ logger.info('connecting to port', config.PORT);
 const mongoUrl = config.MONGODB_URI;
 mongoose.connect(mongoUrl);
 
+app.use(express.static('build'));
 app.use(cors());
 app.use(express.json());
 app.use('/api/movements', movRouter);
