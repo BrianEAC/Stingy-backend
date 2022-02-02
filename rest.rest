@@ -1,4 +1,8 @@
-GET https://stingy-genco.herokuapp.com/api/movements
+PUT http://localhost:3001/api/movements/61b72909e5040af0ee0638c8
 Content-Type: application/json
+
+{
+    "value": 1241254
+}
 
 

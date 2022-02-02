@@ -32,6 +32,10 @@ movRouter.post('/', (request, response, next) => {
     .catch((error) => next(error));
 });
 
+movRouter.put('/:id', (request, response, next) => {
+  Movement.findByIdAndUpdate(request.params.id, request.body).then(() => response.status(200).end())
+})
+
 movRouter.delete('/:id', (request, response, next) => {
   Movement.findByIdAndRemove(request.params.id)
     .then(() => {
